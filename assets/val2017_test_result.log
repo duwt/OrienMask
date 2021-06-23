@@ -1,0 +1,73 @@
+$ CUDA_VISIBLE_DEVICES=0 python test.py -c orienmask_yolo_coco_544_anchor4_fpn_plus_test -w checkpoints/OrienMaskAnchor4FPNPlus/orienmask_yolo.pth
+
+COCO eval bbox:
+| AP    | AP50   | AP75   | APS   | APM   | APL   | AR1   | AR10   | AR100   | ARS   | ARM   | ARL   |
+|:------|:-------|:-------|:------|:------|:------|:------|:-------|:--------|:------|:------|:------|
+| 0.385 | 0.609  | 0.414  | 0.223 | 0.422 | 0.511 | 0.311 | 0.489  | 0.515   | 0.340 | 0.545 | 0.655 |
+
+Per-category bbox AP:
+| category      | AP     | category     | AP     | category       | AP     |
+|:--------------|:-------|:-------------|:-------|:---------------|:-------|
+| person        | 51.310 | bicycle      | 29.710 | car            | 41.316 |
+| motorbike     | 41.597 | aeroplane    | 62.651 | bus            | 64.174 |
+| train         | 62.626 | truck        | 37.607 | boat           | 26.414 |
+| traffic-light | 23.067 | fire-hydrant | 61.577 | stop-sign      | 59.002 |
+| parking-meter | 41.626 | bench        | 23.639 | bird           | 32.898 |
+| cat           | 63.520 | dog          | 59.106 | horse          | 56.413 |
+| sheep         | 49.164 | cow          | 53.277 | elephant       | 59.608 |
+| bear          | 71.277 | zebra        | 63.745 | giraffe        | 65.031 |
+| backpack      | 13.248 | umbrella     | 39.304 | handbag        | 13.983 |
+| tie           | 30.387 | suitcase     | 35.386 | frisbee        | 58.200 |
+| skis          | 22.571 | snowboard    | 28.906 | sports-ball    | 41.331 |
+| kite          | 38.750 | baseball-bat | 22.801 | baseball-glove | 33.377 |
+| skateboard    | 48.992 | surfboard    | 35.978 | tennis-racket  | 45.289 |
+| bottle        | 34.756 | wine-glass   | 32.024 | cup            | 39.225 |
+| fork          | 31.587 | knife        | 15.640 | spoon          | 15.469 |
+| bowl          | 36.479 | banana       | 22.424 | apple          | 13.911 |
+| sandwich      | 30.829 | orange       | 28.628 | broccoli       | 19.326 |
+| carrot        | 19.700 | hot-dog      | 33.750 | pizza          | 47.800 |
+| donut         | 41.943 | cake         | 34.698 | chair          | 29.373 |
+| sofa          | 41.884 | potted-plant | 26.169 | bed            | 41.508 |
+| dining-table  | 25.193 | toilet       | 57.455 | tv-monitor     | 55.131 |
+| laptop        | 56.505 | mouse        | 55.258 | remote         | 29.308 |
+| keyboard      | 47.003 | cell-phone   | 32.727 | microwave      | 54.850 |
+| oven          | 32.343 | toaster      | 22.300 | sink           | 35.722 |
+| refrigerator  | 50.499 | book         | 12.081 | clock          | 43.532 |
+| vase          | 34.967 | scissors     | 28.361 | teddy-bear     | 41.672 |
+| hair-drier    | 0.000  | toothbrush   | 16.872 |                |        |
+
+COCO eval segm:
+| AP    | AP50   | AP75   | APS   | APM   | APL   | AR1   | AR10   | AR100   | ARS   | ARM   | ARL   |
+|:------|:-------|:-------|:------|:------|:------|:------|:-------|:--------|:------|:------|:------|
+| 0.345 | 0.560  | 0.358  | 0.168 | 0.385 | 0.491 | 0.292 | 0.445  | 0.465   | 0.282 | 0.512 | 0.605 |
+
+Per-category segm AP:
+| category      | AP     | category     | AP     | category       | AP     |
+|:--------------|:-------|:-------------|:-------|:---------------|:-------|
+| person        | 42.255 | bicycle      | 16.498 | car            | 37.907 |
+| motorbike     | 30.354 | aeroplane    | 47.807 | bus            | 65.354 |
+| train         | 63.863 | truck        | 37.766 | boat           | 21.976 |
+| traffic-light | 20.661 | fire-hydrant | 62.286 | stop-sign      | 61.414 |
+| parking-meter | 44.740 | bench        | 16.496 | bird           | 25.906 |
+| cat           | 50.946 | dog          | 50.116 | horse          | 40.188 |
+| sheep         | 42.342 | cow          | 43.530 | elephant       | 55.704 |
+| bear          | 70.973 | zebra        | 54.278 | giraffe        | 49.489 |
+| backpack      | 13.487 | umbrella     | 43.116 | handbag        | 13.512 |
+| tie           | 26.733 | suitcase     | 38.122 | frisbee        | 56.661 |
+| skis          | 2.673  | snowboard    | 18.020 | sports-ball    | 34.503 |
+| kite          | 22.121 | baseball-bat | 20.432 | baseball-glove | 35.991 |
+| skateboard    | 31.226 | surfboard    | 27.283 | tennis-racket  | 51.417 |
+| bottle        | 33.599 | wine-glass   | 30.021 | cup            | 41.048 |
+| fork          | 13.812 | knife        | 10.785 | spoon          | 9.198  |
+| bowl          | 34.849 | banana       | 17.706 | apple          | 13.682 |
+| sandwich      | 30.444 | orange       | 28.545 | broccoli       | 18.165 |
+| carrot        | 15.734 | hot-dog      | 27.366 | pizza          | 39.394 |
+| donut         | 44.131 | cake         | 33.975 | chair          | 20.680 |
+| sofa          | 35.847 | potted-plant | 22.410 | bed            | 31.557 |
+| dining-table  | 13.917 | toilet       | 56.723 | tv-monitor     | 59.981 |
+| laptop        | 54.759 | mouse        | 58.710 | remote         | 27.036 |
+| keyboard      | 47.252 | cell-phone   | 30.442 | microwave      | 59.846 |
+| oven          | 30.024 | toaster      | 30.388 | sink           | 36.352 |
+| refrigerator  | 54.522 | book         | 6.662  | clock          | 46.002 |
+| vase          | 35.689 | scissors     | 17.843 | teddy-bear     | 38.677 |
+| hair-drier    | 0.110  | toothbrush   | 11.474 |                |        |
