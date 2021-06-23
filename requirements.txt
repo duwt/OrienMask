@@ -1,0 +1,16 @@
+numpy
+torch
+torchvision
+Cython
+pycocotools
+tqdm
+pandas
+torchsummary
+tensorboard
+tensorboardX
+prettytable
+jupyter
+matplotlib
+opencv-python
+tabulate
+
