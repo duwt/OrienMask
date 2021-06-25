@@ -4,6 +4,8 @@ This repository implements the framework OrienMask for real-time instance segmen
 
 It achieves 34.8 mask AP on COCO test-dev at the speed of 42.7 FPS evaluated with a single RTX 2080Ti. ([log](assets/test-dev_scoring_output.log))
 
+Paper: [Real-time Instance Segmentation with Discriminative Orientation Maps](https://arxiv.org/abs/2106.12204)
+
 ![](assets/framework.png)
 
 ## Installation
@@ -72,3 +74,14 @@ CUDA_VISIBLE_DEVICES=0 python infer.py \
 ### logs
 
 We provide two types of logs for monitoring the training process. The first is updated on the terminal which is also stored in a `train.log` file in the checkpoint directory. The other is the tensorboard whose statistics are kept in the checkpoint directory.
+
+## Citation
+
+```
+@article{du2021realtime,
+  title={Real-time Instance Segmentation with Discriminative Orientation Maps}, 
+  author={Du, Wentao and Xiang, Zhiyu and Chen, Shuya and Qiao, Chengyu and Chen, Yiman and Bai, Tingming},
+  journal={arXiv preprint arXiv:2106.12204},
+  year={2021}
+}
+```
