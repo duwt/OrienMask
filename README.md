@@ -4,7 +4,7 @@ This repository implements the framework OrienMask for real-time instance segmen
 
 It achieves 34.8 mask AP on COCO test-dev at the speed of 42.7 FPS evaluated with a single RTX 2080Ti. ([log](assets/test-dev_scoring_output.log))
 
-Paper: [Real-time Instance Segmentation with Discriminative Orientation Maps](https://arxiv.org/abs/2106.12204)
+Paper: [Real-time Instance Segmentation with Discriminative Orientation Maps](https://arxiv.org/abs/2106.12204) (ICCV 2021)
 
 ![](assets/framework.png)
 
