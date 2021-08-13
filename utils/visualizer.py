@@ -80,7 +80,7 @@ class InferenceVisualizer:
         return pred_show
 
     def plot_one_box(self, bbox, text, image, color):
-        x1, y1, x2, y2 = bbox
+        x1, y1, x2, y2 = bbox.cpu().tolist()
         cv2.rectangle(image, (x1, y1), (x2, y2), color, thickness=self.line_thickness)
 
         font_face = cv2.FONT_HERSHEY_DUPLEX
